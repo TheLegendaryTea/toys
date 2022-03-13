@@ -1,0 +1,24 @@
+﻿<Window x:Class="toys.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:toys"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.ColumnSpan="2" Content="Ok" FontSize="20" Margin="150 10 10 10" Click="Button_Click"/>
+        <Label Margin="10 10 250 10" Content="введите значение"/>
+        <TextBox Margin="10 35 285 10" Name="nBox" MaxLength="3"/>
+        <TextBlock Grid.Row="1" Margin="10" Background="White" x:Name="Result"/>
+        <StackPanel Grid.Row="1" x:Name="Patterns" Grid.Column="1" Margin="10"/>
+    </Grid>
+</Window>
